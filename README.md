@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This POC is a concept to use json based schema for configuring and consuming data  
+from any API and translate data from the configured schema.
 
-Things you may want to cover:
+### Schema definition
 
-* Ruby version
+```json
+{
+    "url":"",
+    "headers":{},
+    "configs": {
+        [
+            {
+                "from": "amount",
+                "to": "value",
+                "function": "function to be applied"
+            },
+            {
+                "from": "address.streetAddress",
+                "to": "address.street",
+                "function": "function to be applied"
+            }
+        ]
+    }
+}
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```

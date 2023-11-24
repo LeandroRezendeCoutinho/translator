@@ -1,0 +1,10 @@
+# .rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 3.2.2 # Adjust as needed
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
