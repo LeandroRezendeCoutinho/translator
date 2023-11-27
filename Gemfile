@@ -16,6 +16,9 @@ gem 'puma', '>= 5.0'
 gem 'sidekiq', '>= 7.0.3'
 
 gem 'json-schema'
+
+gem 'whenever', require: false
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
