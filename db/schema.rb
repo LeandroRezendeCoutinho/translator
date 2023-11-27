@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 20_231_122_133_329) do
-  create_table 'configs', force: :cascade do |t|
-    t.string 'name'
-    t.json 'schema'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+ActiveRecord::Schema[7.1].define(version: 2023_11_22_133329) do
+  create_table "configs", force: :cascade do |t|
+    t.string "name"
+    t.json "schema"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
 end
