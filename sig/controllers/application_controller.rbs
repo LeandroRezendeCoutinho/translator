@@ -1,0 +1,3 @@
+class ApplicationController 
+  def before_action: -> untyped
+end

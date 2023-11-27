@@ -1,0 +1,5 @@
+class JsonSchemaValidator < ActiveModel::Validator
+  SCHEMA: ::Hash[::String, "object" | ::Array["url" | "header" | "config"] | ::Hash[::String, ::Hash[::String, "string"] | ::Hash[::String, "object"] | ::Hash[::String, "array" | 1 | ::Hash[::String, "object" | ::Array["from" | "to"] | ::Hash[::String, ::Hash[::String, "string"]]]]]]
+
+  def validate: (untyped record) -> (nil | untyped)
+end

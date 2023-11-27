@@ -1,0 +1,5 @@
+class ProducerJob
+  include Sidekiq::Job
+
+  def perform: (*untyped args) -> nil
+end

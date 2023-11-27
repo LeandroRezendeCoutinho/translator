@@ -1,0 +1,28 @@
+class ConfigsController < ApplicationController
+  @configs: untyped
+
+  @config: untyped
+
+  # GET /configs
+  def index: () -> untyped
+
+  # GET /configs/1
+  def show: () -> untyped
+
+  # POST /configs
+  def create: () -> untyped
+
+  # PATCH/PUT /configs/1
+  def update: () -> untyped
+
+  # DELETE /configs/1
+  def destroy: () -> untyped
+
+  private
+
+  # Use callbacks to share common setup or constraints between actions.
+  def set_config: () -> untyped
+
+  # Only allow a list of trusted parameters through.
+  def config_params: () -> untyped
+end

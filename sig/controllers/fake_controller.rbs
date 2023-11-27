@@ -1,0 +1,4 @@
+class FakeController < ApplicationController
+  # rubocop:disable Metrics/MethodLength
+  def index: () -> untyped
+end
