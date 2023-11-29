@@ -17,12 +17,6 @@ class ConfigsController < ApplicationController
 
   # POST /configs
   def create
-    # unless SchemaService.schema_valid?(config_params[:schema].to_h)
-    #   @config = Config.new
-    #   @config.errors.add(:schema, message: 'is not valid')
-    #   render json: @config.errors, status: :unprocessable_entity and return
-    # end
-
     @config = Config.new(config_params)
 
     if @config.save
